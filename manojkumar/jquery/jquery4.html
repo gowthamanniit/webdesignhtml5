@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			
+			$("#hi").click(function(){
+				$("img").hide(1000);
+			});
+			$("#sh").click(function(){
+				$("img").show(2000);
+			});
+			$("#em").click(function(){
+				$("p").empty(5000);
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<center>
+	<img src="../images/gowtham.jfif" style="width:50%;border-radius: 50%;">
+	<p style="border:5px solid red">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam corrupti tenetur explicabo est aperiam voluptas libero sint accusamus labore quod maiores quis inventore necessitatibus pariatur in fugit, quibusdam natus aliquid?</p>
+	</center>
+	<button id="hi">hide </button>
+	<button id="sh">show </button>
+	<button id="em">empty </button>
+	
+</body>
+</html>
