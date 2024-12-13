@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		class Student
+		{
+			constructor(rno,name,mark)
+			{
+				this.rno=rno;
+				this.name=name;				
+				this.mark=mark;
+				console.log("constructor auto called");
+			}
+			show()
+			{
+				document.write("<br>"+this.rno+" "+this.name+"  "+this.mark);
+			}
+			showans()
+			{
+				return this.rno+" "+this.name+"  "+this.mark;
+			}
+		}
+
+		var s1=new Student(1001,"gowtham",89);
+		var s2=new Student(1002,"manoj",79);
+		var s3=new Student(1003,"rajasekar",59);
+		var s4=new Student(1004,"sathya",69);
+		var s5=new Student(1005,"chitra",79);
+
+		s1.show();
+		s2.show();
+		s3.show();
+		s4.show();
+		s5.show();
+
+		// or method 
+
+		allobj=[s1,s2,s3,s4,s5];
+		for (obj of allobj)
+		{
+			obj.show();
+		}
+		for (obj of allobj)
+		{
+document.write("<br><------------"+obj.showans()+"-------->");
+		}
+	</script>   
+</head>
+<body>
+
+</body>
+</html>

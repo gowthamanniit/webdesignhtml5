@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function student(rno,name,mark)
+		{
+			this.rno=rno;
+			this.name=name;
+			this.mark=mark;
+		}
+
+		function callobj()
+		{
+		var r=document.getElementById("t1").value;
+		var n=document.getElementById("t2").value;
+		var m=document.getElementById("t3").value;
+
+		var s1=new student(r,n,m);
+		
+
+		document.write("<br>rno:"+s1.rno);
+		document.write("<br>student name:"+s1.name);
+		document.write("<br>student mark:"+s1.mark);
+	}
+
+	</script>
+</head>
+<body>
+	<h2>Rno:<input type="text" id="t1"></h2>
+	<h2>student name:<input type="text" id="t2"></h2>
+	<h2>Mark:<input type="text" id="t3"></h2>
+	<button onclick="callobj()">clickme</button>
+
+</body>
+</html>

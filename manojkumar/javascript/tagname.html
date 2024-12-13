@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var opt=document.getElementsByTagName("option");
+			console.log(opt.length);
+			var ans="";
+			for(var i=0;i<opt.length;i++)
+			{
+				if(opt[i].selected===true)
+				{
+					ans=ans+opt[i].value+",";
+				}
+			}
+			document.getElementById("res").innerHTML="Selected Months:"+ans;
+		}
+	</script>
+</head>
+<body>
+	<select multiple size="10">		
+		<option>January</option>
+		<option>February</option>
+		<option>March</option>
+		<option>April</option>
+		<option>May</option>
+		<option>June</option>
+		<option>July</option>
+		<option>August</option>
+		<option>September</option>
+		<option>October</option>
+		<option>November</option>
+		<option>December</option>
+	</select>
+	<button onclick="dis()">clickme</button>
+	<div id="res"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function dis()
+		{
+			var m1=parseInt(document.getElementById("t1").value);
+			var m2=parseInt(document.getElementById("t2").value);
+			var m3=parseInt(document.getElementById("t3").value);
+			var m4=parseInt(document.getElementById("t4").value);
+			var m5=parseInt(document.getElementById("t5").value);
+			var tot=m1+m2+m3+m4+m5;
+			var avg=tot/5;
+			var res="",gra="";
+			if(m1>34 && m2>34 && m3>34 && m4>34 && m5>34)
+			{
+				res="pass";
+				if(avg>=85)
+					gra="outstanding";
+				else if(avg>=75)
+					gra="excellent";
+				else if(avg>=65)
+					gra="very good";
+				else if(avg>=55)
+					gra="good";
+				else
+					gra="Fair";
+			}
+			else
+			{
+				res="fail";
+				gra="no grade";
+			}
+			document.getElementById("res1").innerHTML ="Total:"+tot;
+			document.getElementById("res2").innerHTML ="Average:"+avg;
+			document.getElementById("res3").innerHTML ="Result:"+res;
+			document.getElementById("res4").innerHTML ="Grade:"+gra;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="t1" placeholder="Enter mark1"> <br>
+	<input type="text" id="t2" placeholder="Enter mark2"> <br>
+	<input type="text" id="t3" placeholder="Enter mark3"> <br>
+	<input type="text" id="t4" placeholder="Enter mark4"> <br>
+	<input type="text" id="t5" placeholder="Enter mark5"> <br>
+	<input type="button" value="find total" onclick="dis()">
+	<div id="res1"></div>
+	<div id="res2"></div>
+	<div id="res3"></div>
+	<div id="res4"></div>
+</body>
+</html>

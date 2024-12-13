@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+			var name=document.getElementById("t1").value;
+			var len=name.length;
+	document.getElementById("r1").innerHTML="Length :"+len;
+	document.getElementById("r2").innerHTML="Upper :"+name.toUpperCase();
+	document.getElementById("r3").innerHTML="Lower :"+name.toLowerCase();
+	document.getElementById("r4").innerHTML="charAt :"+name.charAt(3);
+	var len=name.trim().length;
+	document.getElementById("r5").innerHTML="trim :"+len;
+	document.getElementById("r6").innerHTML="replace :"+name.replace("a","u");
+
+document.getElementById("r7").innerHTML="replace :"+name.replaceAll("a","u");
+document.getElementById("r8").innerHTML="substring :"+name.substring(5);
+document.getElementById("r9").innerHTML="substring :"+name.substring(5,8);
+document.getElementById("r10").innerHTML="substring :"+name.substring(5,8);
+document.getElementById("r11").innerHTML="substring :"+name.includes("man");
+document.getElementById("r12").innerHTML="startswith :"+name.startsWith("man");
+document.getElementById("r13").innerHTML="endswith :"+name.endsWith("man");
+
+
+
+		}
+	</script>
+</head>
+<body>
+
+<input type="text" id="t1" value="ddd" placeholder="Enter Text:">
+<br>
+<input type="button" value="clickme" onclick="show()">
+<br>
+<div id="r1"></div>
+<div id="r2"></div>
+<div id="r3"></div>
+<div id="r4"></div>
+<div id="r5"></div>
+<div id="r6"></div>
+<div id="r7"></div>
+<div id="r8"></div>
+<div id="r9"></div>
+<div id="r10"></div>
+<div id="r11"></div>
+<div id="r12"></div>
+<div id="r13"></div>
+
+</body>
+</html>

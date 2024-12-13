@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+			var t=document.getElementById("t1").value;
+
+			var ans="";
+			for(var i=0;i<t.length;i++)
+			{
+				
+				if(t.charAt(i)>='A' && t.charAt(i)<='Z')
+				continue;				
+				ans=ans+t.charAt(i);
+			}
+			document.getElementById("res").innerHTML=ans;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="t1" placeholder="Enter Text:"><br>
+	<input type="button" value="jumping statement" onclick="show()">
+	<div id="res"></div>
+</body>
+</html>

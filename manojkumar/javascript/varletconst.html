@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>	</title>
+	<script type="text/javascript">
+		
+		var k1=100;
+		let k2=100;
+		const k3=100;
+
+		k1=k1+10;
+		console.log("var k1:"+k1);
+		k2=k2+10;
+		console.log("let k2:"+k2);
+		
+		// k3=k3+10; error constant value cannot change		
+		console.log("const k3:"+k3);
+
+		if (true)
+		{
+			var k4=200;
+			let k5=200;
+			const k6=200;
+		}
+		console.log("gloabl var: k4:"+k4); //globale
+		//console.log("let var: k5:"+k5); // error local only
+		// console.log("const  k6:"+k6); // error 
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="reverse.js"></script>
+	<script type="text/javascript">		
+		function show()
+		{
+			var n=document.getElementById("t1").value;
+			var ans=reverselogic(n);
+			document.getElementById("res").innerHTML=ans;
+		}
+	</script>
+</head>
+<body>
+	<h1>Reverse Name:</h1>
+
+	<input type="text" id="t1" placeholder="Enter Text:"><br>
+	<button onclick="show()">Reverse Name</button>
+	<div id="res"></div>
+</body>
+</html>

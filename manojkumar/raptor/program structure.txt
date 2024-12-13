@@ -1,0 +1,29 @@
+programming structure:
+=======================
+
+what is programming ?
+	
+	set of instructions.
+	set of commands
+	set of code.
+
+purpose?
+	
+	- man power reduce
+	- very fast  & efficiency
+	- automatted system.
+	- secure (otp)
+RAM:
+	Random Access Memory
+
+database:
+	mysql,oracle,sqlserver
+
+application:
+	web ,mobile, windows
+
+	
+	
+
+
+	

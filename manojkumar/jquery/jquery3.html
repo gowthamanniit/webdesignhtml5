@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			
+			$("#fi").click(function(){
+				$("img").fadeIn(1000);
+			});
+			$("#fo").click(function(){
+				$("img").fadeOut(2000);
+			});
+			$("#ft").click(function(){
+				$("img").fadeToggle(5000);
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<center>
+	<img src="d:/images/gowtham.jfif" style="width:50%;border-radius: 50%;">
+	</center>
+	<button id="fi">fadein </button>
+	<button id="fo">fadeout </button>
+	<button id="ft">fadetoggle </button>
+	
+</body>
+</html>

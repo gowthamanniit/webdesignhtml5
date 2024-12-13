@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function phval()
+		{
+			 
+			var name=document.getElementById("t1").value;
+			
+			var f1=/[a-z]/g;
+			var f2=/[A-Z]/g;
+			var f3=/[\d]/g;
+			var f4=/[^0-9a-zA-Z]/g;
+
+
+			if(name.match(f1) && name.match(f2) && name.match(f3) && name.match(f4) && name.length>=8)
+			{
+document.getElementById("res").innerHTML="valid format";
+			}
+			else
+			{
+document.getElementById("res").innerHTML="invalid format ";
+			}
+		}
+		function showpass()
+		{
+			if(document.getElementById("t1").type=="text")
+				document.getElementById("t1").type="password";
+			else
+				document.getElementById("t1").type="text";
+
+		}
+	</script>
+	<style type="text/css">
+		button
+		{
+			border:none;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>1.atleast 1 caps 2.atleast 1 small 3.atleast 1 digits 4.atleast specila chars 5. lenth>=8 </h1>
+	<input type="password" id="t1" placeholder="enter password">
+	<button onclick="showpass()"><img src="d:/images/showimg1.jfif" width="15"></button>
+	<br>
+	<input type="button" value="test valid or invalid " onclick="phval()"><br>
+	<div id="res"></div>
+</body>
+</html>

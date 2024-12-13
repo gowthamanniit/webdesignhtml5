@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">		
+		function dis()
+		{
+			var v1=parseFloat(document.getElementById("t1").value);
+			var v2=parseFloat(document.getElementById("t2").value);
+			var tot=v1+v2;
+			document.getElementById("res").innerHTML="Total : "+tot;
+			var tot=""+v1+v2;
+			document.getElementById("res1").innerHTML="Total : "+tot;
+		}
+	</script>
+</head>
+<body>
+	<h1><center>COnvertion: str to int</center></h1>
+	<input type="text" id="t1" placeholder="Enter number one:"><br>
+	<input type="text" id="t2" placeholder="Enter number two:"><br>
+	<input type="button" value="find total" onclick="dis()"><br>
+	<div id="res"></div>
+	<div id="res1"></div>
+</body>
+</html>

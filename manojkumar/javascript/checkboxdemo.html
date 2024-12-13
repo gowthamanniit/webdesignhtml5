@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function show()
+		{
+			/*
+			var cou1=document.getElementById("c1").checked;
+			var cou2=document.getElementById("c2").checked;
+			var cou3=document.getElementById("c3").checked;
+			var cou4=document.getElementById("c4").checked;
+			var cou5=document.getElementById("c5").checked;
+var ans="";
+			if(cou1===true)
+				ans=ans+document.getElementById("c1").value+",";
+			if(cou2===true)
+				ans=ans+document.getElementById("c2").value+",";
+			if(cou3===true)
+				ans=ans+document.getElementById("c3").value+",";
+			if(cou4===true)
+				ans=ans+document.getElementById("c4").value+",";
+			if(cou5===true)
+				ans=ans+document.getElementById("c5").value+",";
+
+
+			//document.getElementById("res").innerHTML=ans;
+			document.getElementById("res").innerHTML=ans.substring(0,ans.length-1);
+			//alert(cou1);*/
+			var len=document.getElementsByName("courses").length;
+			var cou=document.getElementsByName("courses");
+			var ans="";
+			alert(len);
+			for(var i=0;i<len;i++)
+			{
+				if(cou[i].checked==true)
+				{
+					ans=ans+cou[i].value+",";
+				}
+
+			}
+document.getElementById("res").innerHTML=ans.substring(0,ans.length-1);
+		}
+	</script>
+</head>
+<body>
+	<input type="checkbox" name="courses" value="c">C<br>
+	<input type="checkbox" name="courses" value="c++">C++<br>
+	<input type="checkbox" name="courses" value="java">JAVA<br>
+	<input type="checkbox" name="courses" value="python">PYTHON<br>
+	<input type="checkbox" name="courses" value="php">php<br>
+	<input type="checkbox" name="courses" value="github">git<br>
+	<input type="checkbox" name="courses" value="none of these above">NONE of Thease Above<br>
+	<input type="button" onclick="show()" value="show selected course"><br>
+	<div id="res"></div>
+</body>
+</html>

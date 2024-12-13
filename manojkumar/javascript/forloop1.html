@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+			function dis()
+			{
+				var n=parseInt(document.getElementById("t1").value);
+				var c=0,ans="";
+				for(var i=2; i<n; i++)
+				{
+					if(n%i==0)
+					{
+						ans=ans+i+","
+						c++;
+					}
+				}
+				if(c>0)
+				document.getElementById("res").innerHTML=n+" is not a prime because divide by"+ans;
+				else
+				document.getElementById("res").innerHTML=n+" is prime";
+
+			}
+	</script>
+</head>
+<body>
+
+	<input type="text" id="t1" placeholder="Enter number:"><br>
+	
+	<input type="button" onclick="dis()" value="find prime or not">
+	<div id="res"></div>
+</body>
+</html>

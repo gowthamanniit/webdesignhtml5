@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+			function dis()
+			{
+				var s=parseInt(document.getElementById("t1").value);
+				var e=parseInt(document.getElementById("t2").value);
+				var ans="";
+				var sum=0;
+				for(var i=s; i<=e; i++)
+				{
+					sum=sum+i;
+					if(i==e)
+					ans=ans+i+"="+sum;						
+					else
+					ans=ans+i+"+";
+				}
+				document.getElementById("res").innerHTML=ans;
+			}
+	</script>
+</head>
+<body>
+	<input type="text" id="t1" placeholder="Enter start number:"><br>
+	<input type="text" id="t2" placeholder="Enter end number:"><br>
+	<input type="button" onclick="dis()" value="clickme">
+	<div id="res"></div>
+</body>
+</html>
