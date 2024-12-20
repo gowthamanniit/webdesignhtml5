@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){            
+            $("button").click(function(){
+                var a=parseInt($("#t1").val());
+                var b=parseInt($("#t2").val());            
+                var tot=a+b;
+                //alert(tot);
+                $("#t3").val("Total:"+tot);
+
+            });			
+		});
+	</script>
+</head>
+<body>
+	<input type="text" id="t1"><br>
+    <input type="text" id="t2"><br>
+    <button>Total</button><br>
+    <input type="text" id="t3" readonly><br>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+            $("#but1").click(function(){
+                $("#res1").html("button single clicked")
+            });			
+            $("#but1").dblclick(function(){
+                $("#res1").html("button double clicked")
+            });			
+            $("#but1").mouseenter(function(){
+                $("#res1").html("mouse entered into button")
+            });			
+            $("#but1").mouseleave(function(){
+                $("#res1").html("mouse leave to button")
+            });			
+            $("#but1").mousedown(function(){
+                $("#res1").html("mouse clicking left ,right, & middle ")
+            });			
+            $("#but1").mouseup(function(){
+                $("#res1").html("mouse releasing left ,right, & middle ")
+            });			
+            $("#but1").hover(function(){
+                $("#res1").html("mouse hover ")
+            });			
+            
+		});
+	</script>
+</head>
+<body>
+	<button id="but1">CSS JQUERY </button>	
+    <div id="res1"></div>
+</body>
+</html>
